@@ -11,7 +11,7 @@ Welcome to the Awesome TODO App! This application helps you manage your tasks ef
 Please follow these steps:
 
 - Fork the repository.
-- Create a new branch for your attempt: ```git checkout -b <your_username>/<position_interested>```.
+- Create a new branch for your attempt: ```git checkout -b <your_username>```.
 - Commit your changes
-- Push to your branch: ```git push origin <your_username>/<position_interested>```.
+- Push to your branch: ```git push origin <your_username>```.
 - Submit a pull request.

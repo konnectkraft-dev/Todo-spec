@@ -1,0 +1,222 @@
+/* Reset and Defaults */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+/* Body and General Styling */
+body {
+  background-color: #f4f4f4;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Todo Container */
+.todo-container {
+  width: 450px;
+  height: auto;
+  padding: 20px;
+  background-color: #f5f5f5; /* Light gray background */
+  border-radius: 8px;
+}
+
+.todo-input form input,
+select {
+  border: 1px solid #ccc;
+  height: 50px;
+  padding: 10px;
+  width: 300px;
+  border-radius: 8px;
+}
+
+select {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid orangered; /* Subdued color for focus */
+}
+
+.todo-input form button {
+  height: 50px;
+  width: 70px;
+  padding: 0 10px;
+  background-image: linear-gradient(to right, #ff6347, #ff4500);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+/* Todo List */
+.todo-list {
+  width: 100%;
+  height: 400px; /* Set a maximum height for the container */
+  overflow-y: auto; /* Add scrollbars when content overflows vertically */
+  background-color: #f5f5f5; /* Matching container background */
+  padding: 10px;
+  border-radius: 8px;
+}
+.todo-list-item {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #ccc; /* Subdued color for border */
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-list-item .btn-container {
+  display: flex;
+}
+
+.todo-list-item .edit {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    to right,
+    #ff6347,
+    #ff4500
+  ); /* Subdued color */
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px; /* Added margin */
+}
+
+.todo-list-item .del {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    to right,
+    #ff6347,
+    #ff4500
+  ); /* Subdued color */
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px; /* Added margin */
+}
+
+.todo-list .task {
+  display: flex;
+}
+
+.todo-list .task input {
+  margin-right: 10px;
+  width: 20px;
+}
+
+/* Modal Styling */
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.modal {
+  width: 400px;
+  background-color: #f5f5f5; /* Matching container background */
+  border-radius: 5px;
+  padding: 40px;
+  text-align: center;
+  margin-top: 350px;
+}
+
+.modal form {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.modal form button {
+  height: 40px;
+  padding: 10px;
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    #ff6347,
+    #ff4500
+  ); /* Subdued color */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.modal input {
+  width: 250px;
+  height: 40px;
+  border: 1px solid #ccc; /* Subdued color for border */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.modal .btn-container {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.mod-btn {
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.showbtn {
+  background-image: linear-gradient(
+    to right,
+    #ff6347,
+    #ff4500
+  ); /* Subdued color */
+}
+
+.btn-container .cancel {
+  background-image: linear-gradient(
+    to right,
+    #ff6347,
+    #ff4500
+  ); /* Subdued color */
+  margin-right: 10px;
+}
+
+/* Strikethrough Class */
+.strike {
+  text-decoration: line-through;
+}
